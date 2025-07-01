@@ -71,6 +71,7 @@ The script will initialize and prompt you to ask questions. Type your question a
 This project serves as a proof-of-concept. For a production-grade system, several areas could be enhanced:
 
 **Advanced Chunking Strategy**
+
 The current implementation uses a fixed-size character chunking with overlap. While effective, this can sometimes split sentences or ideas in the middle, potentially reducing the semantic quality of a chunk. A more advanced solution could implement:
 
 Recursive Character Text Splitting: A method that tries to split text along a hierarchy of separators (e.g., paragraphs, then sentences, then words) to keep related text together.
@@ -78,6 +79,7 @@ Recursive Character Text Splitting: A method that tries to split text along a hi
 Semantic Chunking: Using NLP models to divide text into chunks based on topical coherence, ensuring each chunk represents a complete idea.
 
 **Sophisticated Search and Retrieval**
+
 ChromaDB is an excellent tool for local development and prototyping. For a scalable, production environment, one might consider:
 
 Managed Vector Databases: Services like Google's Vertex AI Vector Search or other third-party solutions (e.g., Pinecone, Weaviate) offer better scalability, reliability, and performance for very large datasets.
