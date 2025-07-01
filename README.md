@@ -59,13 +59,13 @@ The project is split into two main scripts.
 
 # Step 1: Ingest and Embed Documents
 
-First, you need to run the ingestion script to process your PDFs and populate the ChromaDB database.
-python main_script.py This script will create a chroma_db directory in your project folder containing the vector store. You only need to run this script once, or again when you add or change the documents in the pdfs folder.
+First, you need to run the ingestion script (main_script.py) to process your PDFs and populate the ChromaDB database.
+This script will create a chroma_db directory in your project folder containing the vector store. You only need to run this script once, or again when you add or change the documents in the pdfs folder.
 
 # Step 2: Ask Questions
 
-Once the ingestion is complete, you can run the query script to start the interactive Q&A assistant.
-python query_script.py The script will initialize and prompt you to ask questions. Type your question and press Enter. To exit, type quit.
+Once the ingestion is complete, you can run the query script (query_script.py) to start the interactive Q&A assistant.
+The script will initialize and prompt you to ask questions. Type your question and press Enter. To exit, type quit.
 
 # Limitations and Future Improvements
 This project serves as a proof-of-concept. For a production-grade system, several areas could be enhanced:
