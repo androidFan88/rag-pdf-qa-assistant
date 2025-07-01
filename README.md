@@ -89,5 +89,9 @@ Hybrid Search: Combining traditional keyword-based search (like BM25) with seman
 
 Re-ranking: A more complex pipeline could retrieve a larger number of initial documents (e.g., top 20) and then use a secondary, more sophisticated model (a re-ranker) to select the absolute best results to feed into the final generation prompt.
 
-Security Note
+**Information Source**
+
+The PDF documents I used for the knowledge base in this project are sourced from the Canadian Society of Intestinal Research (CSIR). Specifically, they are from their publicly available patient information resources, which can be found here: https://badgut.org/information-centre/resources-for-health-care-professionals/patient-information-pdfs/
+
+# Security Note
 IMPORTANT: The .gitignore file is configured to ignore the service_account_key.json file, the /pdfs directory, and the /chroma_db directory. Do not commit these files to your public GitHub repository to avoid exposing your private credentials and documents.
