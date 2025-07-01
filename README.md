@@ -56,17 +56,16 @@ Place the Key: Move the downloaded JSON key file into the root directory of this
 Place all the PDF files you want to include in your knowledge base into the /pdfs directory.
 Usage
 The project is split into two main scripts.
-Step 1: Ingest and Embed Documents
+
+# Step 1: Ingest and Embed Documents
+
 First, you need to run the ingestion script to process your PDFs and populate the ChromaDB database.
-python main_script.py
+python main_script.py This script will create a chroma_db directory in your project folder containing the vector store. You only need to run this script once, or again when you add or change the documents in the pdfs folder.
 
+# Step 2: Ask Questions
 
-This script will create a chroma_db directory in your project folder containing the vector store. You only need to run this script once, or again when you add or change the documents in the pdfs folder.
-Step 2: Ask Questions
 Once the ingestion is complete, you can run the query script to start the interactive Q&A assistant.
-python query_script.py
-
-The script will initialize and prompt you to ask questions. Type your question and press Enter. To exit, type quit.
+python query_script.py The script will initialize and prompt you to ask questions. Type your question and press Enter. To exit, type quit.
 
 # Limitations and Future Improvements
 This project serves as a proof-of-concept. For a production-grade system, several areas could be enhanced:
