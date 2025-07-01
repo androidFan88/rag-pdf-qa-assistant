@@ -1,0 +1,14 @@
+# Service Account Key - DO NOT COMMIT
+service_account_key.json
+
+# Local Database - Contains embeddings and can be large
+chroma_db/
+
+# Source Documents - Your private PDFs
+pdfs/
+
+# Python cache files
+__pycache__/
+
+# Python virtual environment
+.venv/
