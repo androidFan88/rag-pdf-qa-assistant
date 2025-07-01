@@ -46,7 +46,7 @@ pip install -r requirements.txt
 
 4. Google Cloud Authentication
 This project requires authentication with Google Cloud to use the Vertex AI API.
-Enable the Vertex AI API: Ensure the Vertex AI API is enabled in your GCP project. You can do so here.
+Enable the Vertex AI API: Ensure the Vertex AI API is enabled in your GCP project.
 Create a Service Account: Follow the GCP documentation to create a service account. Grant it the "Vertex AI User" role.
 Download the Key: Generate a JSON key for your service account and download it.
 Place the Key: Move the downloaded JSON key file into the root directory of this project and rename it to service_account_key.json.
