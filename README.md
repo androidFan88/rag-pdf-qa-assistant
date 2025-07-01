@@ -32,11 +32,12 @@ It is highly recommended to use a virtual environment to manage dependencies.
 python -m venv .venv
 
 # Activate the virtual environment
-# On Windows
-.venv\Scripts\activate
-# On macOS/Linux
-source .venv/bin/activate
 
+**On Windows**
+.venv\Scripts\activate
+
+**On macOS/Linux**
+source .venv/bin/activate
 
 3. Install Dependencies
 Install all the required Python libraries from the requirements.txt file.
